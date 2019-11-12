@@ -5,6 +5,7 @@ class InventoryAllocator:
 
     def allocator(self, Orders, InventoryDistribution):
         output = []
+        
         for i in range(len(InventoryDistribution.get_inventoryDistribution())):  # Loop through warehouses
             # initialize the allocation
             order_allocation = dict()
