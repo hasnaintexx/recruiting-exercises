@@ -4,8 +4,7 @@ class InventoryAllocator:
     # Assumes first warehouse in the list is the cheapest to ship from.
 
     def allocator(self, Orders, InventoryDistribution):
-        output = []
-        
+        output = []     
         for i in range(len(InventoryDistribution.get_inventoryDistribution())):  # Loop through warehouses
             # initialize the allocation
             order_allocation = dict()
@@ -69,7 +68,6 @@ class InventoryAllocator:
 
         # Check to see if there are any orders unfufilled
         if len(Orders.get_order()) > 0:
-
             # Display unfufilled orders with output
             return "{}\n\nUnfufilled Order: {}".format(output,Orders.get_order())
 
